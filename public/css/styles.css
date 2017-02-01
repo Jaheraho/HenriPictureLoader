@@ -1,0 +1,131 @@
+/**/
+
+#maximize {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.invisible{
+    display:none;
+}
+
+/*tmp ende*/
+
+
+.red {
+ background-color: darkred;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.asdfwert {
+    background-color: firebrick;
+}
+/*TMP*/
+
+body {
+    margin:0;
+    padding:0;
+}
+
+/*divs*/
+
+* {
+    box-sizing: border-box;
+    /*transition: opacity 1s linear;*/
+    /*transition: height 1s;*/
+}
+
+/*hack for resizing (no scrolling!)*/
+body{
+    overflow:hidden;
+}
+
+#app {
+    -webkit-app-region: drag;
+    padding: 4% 6% 2%;
+    /*will be set in javascript to -1- after needed size is recongized!*/
+    /*opacity: 0;*/
+    width: 100%;
+
+    background-color: lightyellow;
+}
+
+.pathes > div {
+    display:inline-block;
+    width: 48%;/*hack: 50% crashes*/
+}
+
+.pathes > div:last-of-type {
+    float:right;
+}
+
+.path-input-button {
+    display:flex;
+}
+
+.path-input-button input{
+    flex-grow: 1;
+}
+
+#update {
+    color: dodgerblue;
+    text-decoration: underline;
+    padding-right: 12px;
+    margin-top:2%;
+}
+
+.path input {
+}
+
+/*font*/
+
+* {
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+p, input, button {
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/*buttons*/
+#closeapp {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+#transfer {
+    padding: 2% 8%;
+    width: 100%;
+    margin-top:2%;
+}
+
+.clickable, .scrollable{
+    -webkit-app-region: no-drag !important;
+}
+.clickable:hover {
+    cursor: pointer;
+}
+
+.editable {
+    -webkit-app-region: no-drag !important;
+}
+
+/*label*/
+label {
+    display: block;
+}
+
+/*text*/
+textarea {
+    resize: none;
+}

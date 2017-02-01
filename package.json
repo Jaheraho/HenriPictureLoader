@@ -1,0 +1,36 @@
+{
+  "name": "picture_copy_and_sort",
+  "version": "1.0.0",
+  "description": "INTRODUCING Picture Copy&Paste is a programm based that helps you loading your pictures from your external device (like camera or cellphone) moving, renaming and sorting on your local PC. The programm is a little project of me in which I choosed Electron and React as languages.",
+  "main": "main.js",
+  "scripts": {
+    "webpack": "webpack --display-modules",
+    "build": "npm-run-all webpack",
+    "start": "electron .",
+    "transpile": "babel --presets es2015,react --watch public/react-src/ --out-dir public/react-dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "electron": "^1.4.15",
+    "electron-reload": "^1.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "npm-run-all": "^4.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
